@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class='suiper-image'indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}"interval="{{interval}}" duration="{{duration}}">
+  <block  wx:for="{{banner}}" wx:key="">
+    <swiper-item >
+      <image src="{{item.img}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+   
+<view class='c2'>
+    <view class='ding'>
+        <view class='name'>别伦</view>
+
+        <view class='num'>
+            <view class='z1'>手机</view>
+            <view class='z2'>17601053059</view>
+            <view class='z3'> <button bindtap='bohao'>拨号</button></view>
+        </view>
+
+         <view class='num'>
+            <view class='z1'>邮箱</view>
+            <view class='z2'>{{rlemel}}</view>
+          <view class='z3'> <button bindtap='copyBtn'>复制</button></view>
+        </view>
+
+        <view class='num'>
+            <view class='z1'>职业</view>
+            <view class='z2'>{{zheye}}</view>
+           <view class='z3'> <button bindtap='copyBtn2'>复制</button></view>
+        </view> 
+    </view>
+</view>
+<view class='c3'>
+    <view class='s1'>
+       <view bindtap='clickCarWin'><image src='../img/posters.png'/></view>
+        <text class='ui'>生成海报</text>
+    </view>
+     <view class='s1'>
+      <view><image src='../img/txl.png'/></view>
+        <text  class='ui' bindtap='baochun'>保存电话</text>
+     </view>
+      <view class='s1'>
+        <view class='sdf'> <button class='share' open-type="share" ><image src='../img/share.png'/></button></view>
+          <text  class='ui' id='btc1'>分享好友</text>
+      </view>
+</view>
+
+<view class='v5'>
+<image src='../index/wode1.png'></image>
+</view>   
+
+</view>
